@@ -22,7 +22,7 @@ This module does not currently have any pre-requisites or dependency requirement
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -37,7 +37,7 @@ module "demo_efs" {
   
   // Tags
   # efs_tags = {
-  #   Provisoned_By  = "Terraform"
+  #   Provisioned_By = "Terraform"
   #   GitHub_URL     = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
   # }
 }
@@ -59,7 +59,7 @@ Module variables that need to either be defined or re-defined with a non-default
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name = "EFS-Test-FS"
@@ -95,7 +95,7 @@ shared_fs_name = "EFS-Test-FS"
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name = var.shared_fs_name
@@ -141,7 +141,7 @@ variable "efs_name" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -178,7 +178,7 @@ variable "efs_subnets" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -204,7 +204,7 @@ data "terraform_remote_state" "vpc" {
 }
 
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -340,7 +340,7 @@ variable "efs_performance_mode" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -465,7 +465,7 @@ variable "efs_throughput_mode" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -515,7 +515,7 @@ variable "efs_throughput_value" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = "EFS-Test-FS"
@@ -642,7 +642,7 @@ variable "efs_enable_encryption" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name               = "EFS-Test-FS"
@@ -686,7 +686,7 @@ variable "efs_kms_key_arn" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name               = "EFS-Test-FS"
@@ -809,8 +809,8 @@ variable "efs_tags" {
   type        = map
   description = "Specify any tags that should be added to the EFS FileSystem being provisioned."
   default     = {
-    Provisoned_By      = "Terraform"
-    Module_GitHub_URL  = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
+    Provisioned_By    = "Terraform"
+    Module_GitHub_URL = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
   }
 }
 ```
@@ -821,7 +821,7 @@ variable "efs_tags" {
 
 ```terraform
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name               = "EFS-Test-FS"
@@ -829,10 +829,8 @@ module "demo_efs" {
   
   // Tags
   efs_tags = {
-     Provisoned_By     = "Terraform"
+     Provisioned_By    = "Terraform"
      Module_GitHub_URL = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
-     Encrypted         = "True"
-     CMK               = "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
    }
   
   // Optional Variables with module defined default values assigned
@@ -922,8 +920,8 @@ variable "efs_tags" {
   type        = map
   description = "Specify any tags that should be added to the EFS FileSystem being provisioned."
   default     = {
-    Provisoned_By  = "Terraform"
-    Module_GitHub_URL     = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
+    Provisioned_By    = "Terraform"
+    Module_GitHub_URL = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
   }
 }
 ```
@@ -949,14 +947,14 @@ efs_subnets       = ["subnet-12345678"]
 # They will not need to be included in a project root module variables.tf #
 # file unless a non-default value needs be assigned to the variable.      #
 ###########################################################################
-efs_performance_mode    = "generalPurpose"
-efs_throughput_mode     = "bursting"
-efs_throughput_value    = 0
-efs_enable_encryption   = false
-efs_kms_key_arn         = "NULL"
-efs_tags                = {
-    Provisoned_By       = "Terraform"
-    Module_GitHub_URL   = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
+efs_performance_mode  = "generalPurpose"
+efs_throughput_mode   = "bursting"
+efs_throughput_value  = 0
+efs_enable_encryption = false
+efs_kms_key_arn       = "NULL"
+efs_tags              = {
+    Provisioned_By    = "Terraform"
+    Module_GitHub_URL = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
 }
 ```
 

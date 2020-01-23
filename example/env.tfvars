@@ -25,6 +25,6 @@ fs_throughput      = 0
 fs_encryption      = false
 fs_cmk             = "NULL"
 fs_tags            = {
-    Provisoned_By       = "Terraform"
-    Module_GitHub_URL   = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
+    Provisoned_By     = "Terraform"
+    Module_GitHub_URL = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
 }

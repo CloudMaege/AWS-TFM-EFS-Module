@@ -65,7 +65,7 @@ variable "fs_tags" {
   type        = map
   description = "Specify any tags that should be added to the EFS FileSystem being provisioned."
   default     = {
-    Provisoned_By  = "Terraform"
+    Provisioned_By = "Terraform"
     GitHub_URL     = "https://github.com/CloudMage-TF/AWS-EFS-Module.git"
   }
 }

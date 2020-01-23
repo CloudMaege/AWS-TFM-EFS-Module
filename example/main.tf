@@ -14,7 +14,7 @@ provider "aws" {
 
 // Create an EFS FS
 module "demo_efs" {
-  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.0"
+  source = "git@github.com:CloudMage-TF/AWS-EFS-Module?ref=v1.0.1"
 
   // Required Variables
   efs_name             = var.fs_name
