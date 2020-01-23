@@ -114,7 +114,7 @@ The following required module variables do not contain default values and must b
 
 <br>
 
-![Required](images/required.png)
+![Required](images/neon_required.png)
 
 <br>
 
@@ -154,7 +154,7 @@ module "demo_efs" {
 
 <br>
 
-![Required](images/required.png)
+![Required](images/neon_required.png)
 
 <br>
 
@@ -309,7 +309,7 @@ The following optional module variables are not required because they already ha
 
 <br>
 
-![Optional](images/optional.png)
+![Optional](images/neon_optional.png)
 
 <br>
 
@@ -434,7 +434,7 @@ can't guarantee that exactly these actions will be performed if
 
 <br>
 
-![Optional](images/optional.png)
+![Optional](images/neon_optional.png)
 
 <br>
 
@@ -487,7 +487,7 @@ module "demo_efs" {
 
 <br>
 
-![Optional](images/optional.png)
+![Optional](images/neon_optional.png)
 
 <br>
 
@@ -618,7 +618,7 @@ can't guarantee that exactly these actions will be performed if
 
 <br>
 
-![Optional](images/optional.png)
+![Optional](images/neon_optional.png)
 
 <br>
 
@@ -662,7 +662,7 @@ module "demo_efs" {
 
 <br>
 
-![Optional](images/optional.png)
+![Optional](images/neon_optional.png)
 
 <br>
 
@@ -786,7 +786,7 @@ can't guarantee that exactly these actions will be performed if
 
 <br>
 
-![Optional](images/optional.png)
+![Optional](images/neon_optional.png)
 
 <br>
 
