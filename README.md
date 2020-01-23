@@ -2,7 +2,7 @@
 <!-- markdownlint-disable MD025 Single Title Headers-->
 # Terraform EFS Module
 
-<!-- ![Hero](images/tf_kms.png)   -->
+![Hero](images/tf_efs.png)  
 
 <br>
 
